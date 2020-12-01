@@ -9,7 +9,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: 1.5s;
 }
 
 .color-a {
@@ -26,10 +25,6 @@ div {
 
 .color-d {
   background-color: rgba(255, 255, 0, 0.5);
-}
-
-.color-e {
-  background-color: rgba(153, 205, 50, 0.5);
 }
 
 .color-f {
