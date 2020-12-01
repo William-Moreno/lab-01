@@ -1,0 +1,58 @@
+header > div {
+  height: 75px;
+  width: 100%;
+}
+
+.single {
+  height: 150px;
+  width: 100%;
+}
+
+.double > div {
+  height: 125px;
+  width: 100%;
+}
+
+.quad > div {
+  float: left;
+  height: 250px;
+  width: 50%;
+}
+
+.lower {
+  height: 80px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 960px;
+    margin: auto;
+  }
+  header > div {
+    height: 100px;
+  }
+
+  .single {
+    float: left;
+    height: 600px;
+    width: 20.84%;
+  }
+
+  .double > div {
+    float: left;
+    height: 200px;
+    width: 39.58%;
+  }
+
+  .quad > div {
+    float: left;
+    height: 250px;
+    width: 19.79%;
+  }
+
+  .lower {
+    height: 150px;
+    width: 79.16%;
+  }
+}
