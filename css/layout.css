@@ -1,58 +1,79 @@
-header > div {
-  height: 75px;
-  width: 100%;
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+  grid-template-areas:
+"ca ca"
+"cb cb"
+"cc cc"
+"cd cd"
+"ce cf"
+"cg ch"
+"ci ci";
 }
 
-.single {
-  height: 150px;
-  width: 100%;
+.color-a {
+  grid-area: ca;
 }
 
-.double > div {
-  height: 125px;
-  width: 100%;
+.color-b {
+  grid-area: cb;
 }
 
-.quad > div {
-  float: left;
-  height: 250px;
-  width: 50%;
+.color-c {
+  grid-area: cc;
 }
 
-.lower {
-  height: 80px;
-  width: 100%;
+.color-d {
+  grid-area: cd;
 }
 
-@media (min-width: 768px) {
-  body {
-    max-width: 960px;
-    margin: auto;
-  }
-  header > div {
-    height: 100px;
-  }
+.color-e {
+  grid-area: ce;
+}
 
-  .single {
-    float: left;
-    height: 600px;
-    width: 20.84%;
-  }
+.color-f {
+  grid-area: cf;
+}
 
-  .double > div {
-    float: left;
-    height: 200px;
-    width: 39.58%;
-  }
+.color-g {
+  grid-area: cg;
+}
 
-  .quad > div {
-    float: left;
-    height: 250px;
-    width: 19.79%;
-  }
+.color-h {
+  grid-area: ch;
+}
 
-  .lower {
-    height: 150px;
-    width: 79.16%;
-  }
+.color-i {
+  grid-area: ci;
+}
+
+@media (min-width: 720px) {
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 2fr;
+  grid-template-rows: 1fr 2fr 3fr 3fr 1fr;
+  grid-template-areas:
+"ca ca ca ca"
+"cb cb cb cb"
+"cc ce cf cd"
+"cc cg ch cd"
+"ci ci ci ci";
+}
+}
+
+@media (min-width: 960px) {
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20.84% repeat(4, 19.79%);
+  grid-template-rows: 14.29% 28.57% 35.71% 21.43%;
+  grid-template-areas:
+"ca ca ca ca ca"
+"cb cc cc cd cd"
+"cb ce cf cg ch"
+"cb ci ci ci ci";
+}
 }
